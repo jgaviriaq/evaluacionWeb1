@@ -69,13 +69,17 @@
                 </div>
             </a>
 
-            <div class="card">
-                <p class="icon">S</p>
-                <h2 class="category">Hardware</h2>
-                <p class="description">
-                    Conoce los entresijos del hardware
-                </p>
-            </div>
+            <a href="pagina3.php" target="_blank">
+                <div class="card">
+                    <p class="icon">S</p>
+                    <h2 class="category">Ejercicio 3 </h2>
+                    <p class="description">
+                        Codificar un programa en PHP para la tienda Spring Step que
+                        tiene una promoción de descuento, esta dependerá del número de
+                        zapatos que se compren.
+                    </p>
+                </div>
+            </a>
 
             <div class="card">
                 <p class="icon">u</p>
