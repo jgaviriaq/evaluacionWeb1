@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="fabicon/x-icon" href="img/supertux.png" />
-    <title>Máster en CSS</title>
+    <title>Pagina Principal</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
 
@@ -57,13 +57,17 @@
                     </div>
             </a>
 
-            <div class="card">
-                <p class="icon">_</p>
-                <h2 class="category">Sistemas operativos</h2>
-                <p class="description">
-                    Aprende a administrar sistemas Linux y Windows
-                </p>
-            </div>
+            <a href="pagina2.php" target="_blank">
+                <div class="card">
+                    <p class="icon">_</p>
+                    <h2 class="category">Ejercicio 2</h2>
+                    <p class="description">
+                        El gimnasio Bodytech, lo contrata para desarrollar una
+                        aplicación web que permita a sus usuarios calcular el índice
+                        de masa corporal.
+                    </p>
+                </div>
+            </a>
 
             <div class="card">
                 <p class="icon">S</p>
@@ -92,7 +96,7 @@
             </div>
             <!--Fin de  Tarjetas-->
         </section>
-   
+
 
 </body>
 

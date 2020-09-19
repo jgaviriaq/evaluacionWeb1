@@ -325,14 +325,13 @@ body{
         width: 300px;
         min-height: 1200px;
         font-family: trebuchetMS;
-        float: right;
-        margin: 20px;
+        margin: 20px auto;
     }
 
     aside h3{
         display: block;
         width: auto;
-        height: 45px;
+        height: 60px;
         line-height: 49px;
         background: url(../img/pxgray.png), white;
         box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f;
@@ -341,8 +340,9 @@ body{
         font-weight: normal;
         letter-spacing: 2px;
         padding-left: 15px;
-        margin-top: 30px;
-        margin-bottom: 15px;
+        margin-top: 30px ;
+       
+       
     }
 
     #lateral h3:first-child{
@@ -388,7 +388,7 @@ body{
 
     .aside-box{
         width: 85%;
-        height: 240px;
+        height: 300px;
         margin:  0px auto;
         margin-top: 20px;
         padding-top: 2px;
@@ -396,12 +396,12 @@ body{
         box-shadow: 0px 0px 1px rgba(0,0, 0, 0.3),0px 3px 7px rgba(0,0, 0, 0.3),0px 1px white inset,0px -3px 2px rgba(0,0, 0, 0.3)inset;
     }
 
-    #login input[type="email"],
-    #login input[type="password"]{
+    #login input[type="text"],
+    #login input[type="text"]{
         display: block;
         margin: 0 auto;
         margin-top: 20px;
-        width: 82%;
+        width: 90%;
         height: 30px;
         border: 1px solid #cccccc;
         box-shadow: 1px 1px 1px #cccccc inset;
@@ -431,6 +431,11 @@ body{
         margin-top: 25px;
         font-size: 20px;
     }
+
+    #login #user{
+        font-size: 20px;
+        margin-left: 18px;
+     }
 
     #login input[type="submit"],
     #login input[type="button"],
