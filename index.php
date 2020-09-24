@@ -81,13 +81,17 @@
                 </div>
             </a>
 
-            <div class="card">
-                <p class="icon">u</p>
-                <h2 class="category">Redes e Internet</h2>
-                <p class="description">
-                    Aprende a administrar redes informáticas y servidores
-                </p>
-            </div>
+            <a href="pagina4.php" target="_blank">
+                <div class="card">
+                    <p class="icon">u</p>
+                    <h2 class="category">Ejercicio 4</h2>
+                    <p class="description">
+                        Hacer un programa en PHP para saber cuál será su sueldo semanal,si
+                        trabaja 40 horas o menos, se le pagará $20000 por hora,si trabaja más 
+                        de 40 horas entonces las horas extras se lepagarán a $25000 por hora.
+                    </p>
+                </div>
+            </a>
 
             <div class="card">
                 <p class="icon">a</p>

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="icon" type="fabicon/x-icon" href="img/supertux.png" />
-    <title>Ejercicio 3</title>
+    <title>Ejercicio 4</title>
 </head>
 
 <body>
@@ -59,16 +59,13 @@
         <div class="container-fluid mt-3">
             <div class="row">
                 <div class="col">
-                <div id="banner">   
-                <h1>Descuento DE Zapatos</h1>
-                </div>
-                    <form action="pagina3.php" method="POST">
+                    <div id="banner">
+                        <h1>Nomina Postobon</h1>
+                    </div>
+                    <form action="pagina4.php" method="POST">
                         <div class="form-row">
                             <div class="col">
-                                <input type="text" class="form-control" name="precioZapatos" placeholder="Precio Zapatos">
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" name="cantidadZapatos" placeholder="Cantidad de Pares de Zapatos">
+                                <input type="text" class="form-control" name="cantidadHorasTrabajadas" placeholder="Ingrese la cantidad de horas trabajadas">
                             </div>
                         </div>
                         <button type="submit" name="calcular" class="btn btn-primary mt-3">Calcular</button>
@@ -78,41 +75,30 @@
 
                             <h4>
                                 <?php
-                                $precioZapatos = $_POST["precioZapatos"];
-                                $cantidadZapatos = $_POST["cantidadZapatos"];
+                                $cantidadHorasTrabajadas = $_POST["cantidadHorasTrabajadas"];
 
-                                if ($cantidadZapatos == 3) {
-                                    $porcentajeZapatos = $precioZapatos * 0.1;
-                                    $totalPagar = $precioZapatos - $porcentajeZapatos;
+
+                                if ($cantidadHorasTrabajadas <= 40) {
+                                    $sueldoSemanal = $cantidadHorasTrabajadas * 20000;
                                     echo ("<label style=font-size:20px >El total a pagar es:</label>");
-                                    echo ("<input type='text' value= $'$totalPagar'>");
+                                    echo ("<input type='text' value= $$sueldoSemanal>");
                                 } else {
-                                    if ($cantidadZapatos > 3 && $cantidadZapatos <= 8) {
-                                        $porcentajeZapatos = $precioZapatos * 0.2;
-                                        $totalPagar = $precioZapatos - $porcentajeZapatos;
+                                    if ($cantidadHorasTrabajadas > 40) {
+                                        $horasExtras = ($cantidadHorasTrabajadas - 40);
+                                        $costoHorasExtras = $horasExtras * 25000;
+                                        $sueldoSemanal = ($cantidadHorasTrabajadas - $horasExtras) * 20000;
+                                        $sueldoTotal = $sueldoSemanal + $costoHorasExtras;
                                         echo ("<label style=font-size:20px >El total a pagar es:</label>");
-                                        echo ("<input type='text' value= $'$totalPagar'>");
-                                    } else {
-                                        if ($cantidadZapatos > 8) {
-                                            $porcentajeZapatos = $precioZapatos * 0.5;
-                                            $totalPagar = $precioZapatos - $porcentajeZapatos;
-                                            echo ("<label style=font-size:20px >El total a pagar es:</label>");
-                                            echo ("<input type='text' value= $'$totalPagar'>");
-                                        } else {
-                                            if ($cantidadZapatos < 3) {
-                                                $totalPagar =  $precioZapatos;
-                                                echo ("<label style=font-size:20px >El total a pagar es:</label>");
-                                                echo ("<input type='text' value= $'$totalPagar'>");
-                                            }
-                                        }
+                                        echo ("<input type='text' value= $$sueldoTotal>");
                                     }
                                 }
+
+
                                 ?>
 
                             </h4>
 
                         <?php endif ?>
-
 
                     </form>
 
