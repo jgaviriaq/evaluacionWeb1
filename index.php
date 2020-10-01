@@ -95,9 +95,9 @@
 
             <div class="card">
                 <p class="icon">a</p>
-                <h2 class="category">Bases de datos</h2>
+                <h2 class="category">Ejercicio</h2>
                 <p class="description">
-                    Aprende a montar y a administrar bases de datos
+                    
                 </p>
             </div>
 
